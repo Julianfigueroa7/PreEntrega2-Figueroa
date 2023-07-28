@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a Date el Gusto, donde encontrarás las mejores empanadas, milanesas y pizzas. ¡Disfruta de una amplia variedad de sabores deliciosos! Visita nuestro sitio para conocer más detalles y hacer tu pedido.">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../imagenes/datelogo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:ital,wght@0,300;1,100;1,700&display=swap" rel="stylesheet">
-    <title>Date el Gusto</title>
+    <title>Date el Gusto Milanesas y Pizzas - Date el Gusto</title>
 </head>
 
 <body>
@@ -20,8 +21,8 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#"><img src="../imagenes/datelogo.jpg" width="90px" height="90px" class="logo" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" id="menu-toggle">
+            &#9776;
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -44,12 +45,18 @@
           </div>
         </nav>
       </header>
-      <main class="orange-background">
-        <h1 class="title">EMPANADAS</h1>
-        <h3 class="subtitle">Tenemos 20 variedades para tentarte!</h3>
+      <div class="image-container">
+        <img src="../imagenes/empanadasrelleno.jpg" alt="Flyer de empanadas">
+        <div class="text-container">
+          <h1 class="title-empanadas">EMPANADAS</h1>
+          <h3 class="subtitle-empanadas">Tenemos 20 variedades para tentarte!</h3>
+        </div>
       </div>
+    <main class="orange-background">
+    
         <div class="list-container">
-            <ul class="list-items">
+            <div class="list-wrapper">
+                <ul class="list-items">
                 <li class="list-item"><strong>(C) Carne</strong></li>
                 <li class="sub-item">Carne molida, cebolla, morron, cebolla de verdeo, huevos y condimentos</li>
                 <li class="list-item"><strong>(CC) Carne Cortada a Cuchillo</strong></li>
@@ -67,7 +74,8 @@
                 <li class="list-item"><strong>(CB) Cerdo BBQ</strong></li>
                 <li class="sub-item">Cerdo desmenuzado, cebolla, morron, cerveza negra, caldo, bbq y condimentos</li>
             </ul>
-            <ul class="list-items">
+            <div class="list-wrapper">
+              <ul class="list-items">
                 <li class="list-item"><strong>(JQ) Jamon Y Queso</strong></li>
                 <li class="sub-item">Jamon, muzzarella</li>
                 <li class="list-item"><strong>(JA) Jamón, Queso y Ananá</strong></li>
@@ -79,7 +87,8 @@
                 <li class="list-item"><strong>(SC) Salchicha Y Cheddar</strong></li>
                 <li class="sub-item">Salchicha en cubos, queso cheddar</li>
             </ul>
-            <ul class="list-items">
+            <div class="list-wrapper">
+              <ul class="list-items">
                 <li class="list-item"><strong>(H) Humita</strong></li>
                 <li class="sub-item">Choclo, choclo cremoso, cebolla, salsa blanca y condimentos</li>
                 <li class="list-item"><strong>(V) Verdura</strong></li>
@@ -93,6 +102,7 @@
                 <li class="list-item"><strong>(VS) Vegetales Salteados Al Wok</strong></li>
                 <li class="sub-item">Cebolla, morron, zanahoria, choclo, champiñon, salsa de soja y condimentos</li>
             </ul>
+          </div>
         </div>
     </main>
     
@@ -100,7 +110,8 @@
     
      
     <footer>
-        <div class="container">
+      <div class="container">
+        <div class="footer-left">
           <ul class="social-icons">
             <h1 class="footer-title">Seguinos</h1>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -108,6 +119,20 @@
             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
         </div>
+        <div class="footer-center">
+          <p>DATE EL GUSTO</p>
+          <p>© Date el Gusto S.R.L – Todos los derechos reservados</p>
+          <p>Casa Central: Avda 42 4255, Teléfono: 2262 558999, Necochea, Provincia de Buenos Aires, Argentina</p>
+        </div>
+        <div class="footer-right">
+          <h1 class="footer-title2">PRODUCTOS</h1>
+          <ul>
+            <li><a href="../pages/empanadas.html">Empanadas</a></li>
+            <li><a href="../pages/milanesas.html">Milanesas</a></li>
+            <li><a href="../pages/pizzas.html">Pizzas</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
       
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
